@@ -42,7 +42,7 @@
 
     ?>
     <div class="container">
-    <h1 align="center">Thank You RAMA_1202200262 for Reserving</h1>
+    <h1 align="center">Thank You Rama_1202204313 for Reserving</h1>
     <h3 align="center">Please double check your reservation details</h3>
     <table>
         <thead>

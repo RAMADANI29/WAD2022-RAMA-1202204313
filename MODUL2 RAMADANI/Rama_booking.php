@@ -26,56 +26,56 @@
         </td>
         <td>
             <div class="container">
-                <form action="Rama_mybooking.php" method="get">
+                <form action="Rama_mybooking.php" method="post">
                     <div class="mb-3">
-                        <label for="Name" class="form-label">Name</label>
-                        <input class="form-control" type="text" name="name" value="Rama_1202200262" aria-label="input Nama" readonly>
+                        <label class="form-label">Name</label>
+                        <input class="form-control" type="text" name="name" value="Rama_1202204313" aria-label="input Nama" readonly>
                     </div>
                     <div class="mb-3">
-                        <label for="Date" class="form-label">Book Date</label>
+                        <label class="form-label">Book Date</label>
                         <input class="form-control" name="checkin" type="date">
                     </div>
                     <div class="mb-3">
-                        <label for="Time" class="form-label">Start Time</label>
+                        <label class="form-label">Start Time</label>
                         <input class="form-control" type="time">
                     </div>
                     <div class="mb-3">
-                        <label for="Duration" class="form-label">Duration (days)</label>
+                        <label class="form-label">Duration (days)</label>
                         <input class="form-control" type="number">
                     </div>
                     <div class="mb-3">
-                        <label for="Car" class="form-label">Car Type</label>
+                        <label class="form-label">Car Type</label>
                         <select name="car" class="form-select" name="car">
                             <option selected disabled>Car type</option>
-                            <option value="1">Honda Civic</option>
-                            <option value="2">Wuling Air EV</option>
-                            <option value="3">Toyota Avanza</option>
+                            <option value="Honda Civic">Honda Civic</option>
+                            <option value="Wuling Air EV">Wuling Air EV</option>
+                            <option value="Toyota Avanza">Toyota Avanza</option>
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label for="Phone number" class="form-label">Phone number</label>
+                        <label class="form-label">Phone number</label>
                         <textarea class="form-control" id="Phone number" name="phone" rows="2"></textarea>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <input class="form-check-input" name="check" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
                           Health Protocol / Rp 25.000
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <input class="form-check-input" name="check" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
                           Driver / Rp 100.000
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <input class="form-check-input" name="check" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
                           Fuel Filled / Rp 250.000
                         </label>
                       </div>
                       <br>
-                      <a href= "Rama_mybooking.php" class="btn btn-primary">Book</a>
+                      <button type="submit" class="btn btn-primary w-100">Submit</button>
                       <br>
                 </form>
             </div>

@@ -11,40 +11,41 @@
 <body>
     <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link" href="Rama_home.html">Home</a>
+          <a class="nav-link" href="Rama_home.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Rama_booking">Booking</a>
+          <a class="nav-link" href="Rama_booking.php">Booking</a>
         </li>
       </ul>
     <?php
 
     error_reporting(E_ERROR | E_PARSE);
-    $booking = isset($_GET['bookingnumber']) ? $_GET['bookingnumber']  : '';
-    $name = isset($_GET['name']) ? $_GET['name'] : '';
-    $checkin = isset($_GET['checkin']) ? $_GET['checkin']  : '';
-    $checkout = isset($_GET['checkout']) ? $_GET['checkout']  : '';
-    $phone = isset($_GET['phone']) ? $_GET['phone'] : '';
-    $service = isset($_GET['service']) ? $_GET['service'] : '';
-    $price = isset($_GET['price']) ? $_GET['price'] : '';
+    // $booking = isset($_GET['bookingnumber']) ? $_GET['bookingnumber']  : '';
+    // $name = isset($_GET['name']) ? $_GET['name'] : '';
+    // $checkin = isset($_GET['checkin']) ? $_GET['checkin']  : '';
+    // $checkout = isset($_GET['checkout']) ? $_GET['checkout']  : '';
+    // $phone = isset($_GET['phone']) ? $_GET['phone'] : '';
+    // $service = isset($_GET['service']) ? $_GET['service'] : '';
+    // $price = isset($_GET['price']) ? $_GET['price'] : '';
 
     $mobil = $_POST['car'];
 
     $Total = 0;
 
-    if ($mobil == 'Toyota Innova') {
+    if ($mobil == 'Honda Civic') {
+        $Total = 3500000;
+    } else if ($mobil == 'Wuling Air EV') {
         $Total = 200000;
-    } else if ($mobil == 'Honda Civic') {
-        $Total = 150000;
-    } else if ($mobil == 'Hyundai Santa Fe') {
-        $Total = 250000;
+    } else if ($mobil == 'Toyota Avanza') {
+        $Total = 1000000;
     }
 
     ?>
     <div class="container">
-    <h1 align="center">Thank You RAMA_1202200262 for Reserving</h1>
+    <h1 align="center">Thank You Rama_1202204313 for Reserving</h1>
     <h3 align="center">Please double check your reservation details</h3>
-    <table>
+    </div>
+    <table class="table">
         <thead>
             <tr>
                 <th scope="col">Booking Number</th>
@@ -59,14 +60,14 @@
         </thead>
         <tbody>
             <tr>
-                <td><?php echo $booking (rand()) ?></td>
-                <td><?php echo $name ?></td>
-                <td><?php echo $checkin ?></td>
-                <td><?php echo $checkout ?></td>
-                <td><?php echo $car ?></td>
-                <td><?php echo $phone ?></td>
-                <td><?php echo $service ?></td>
-                <td><?php echo $price ?></td>
+                <td><?php echo(rand(1200000000,1300000000)) ?></td>
+                <td><?php echo $_POST['name']; ?></td>
+                <td><?php echo $_POST['checkin']; ?></td>
+                <td><?php echo $_POST['checkout']; ?></td>
+                <td><?php echo $_POST['car']; ?></td>
+                <td><?php echo $_POST['phone']; ?></td>
+                <td><?php echo $_POST['check']; ?></td>
+                <td><?php echo $Total ?></td>
             </tr>
         </tbody>
     </table>
