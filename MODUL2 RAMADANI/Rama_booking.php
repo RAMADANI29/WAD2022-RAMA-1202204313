@@ -41,7 +41,7 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Duration (days)</label>
-                        <input class="form-control" type="number">
+                        <input name="durasi" class="form-control" type="number">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Car Type</label>
@@ -57,19 +57,19 @@
                         <textarea class="form-control" id="Phone number" name="phone" rows="2"></textarea>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" name="check" type="checkbox" value="" id="flexCheckDefault">
+                        <input name="health" class="form-check-input" name="check" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
                           Health Protocol / Rp 25.000
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" name="check" type="checkbox" value="" id="flexCheckDefault">
+                        <input name="driver" class="form-check-input" name="check" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
                           Driver / Rp 100.000
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" name="check" type="checkbox" value="" id="flexCheckDefault">
+                        <input name="fuel" class="form-check-input" name="check" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
                           Fuel Filled / Rp 250.000
                         </label>

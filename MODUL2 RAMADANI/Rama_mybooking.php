@@ -67,7 +67,7 @@
                 <td><?php echo $_POST['car']; ?></td>
                 <td><?php echo $_POST['phone']; ?></td>
                 <td><?php echo $_POST['check']; ?></td>
-                <td><?php echo $Total ?></td>
+                <td><?php echo $Total *$_POST['durasi'];?></td>
             </tr>
         </tbody>
     </table>
@@ -80,4 +80,4 @@
         Created By Rama_1202204313
     </div>
 </body>
-</html>
+</html>  
