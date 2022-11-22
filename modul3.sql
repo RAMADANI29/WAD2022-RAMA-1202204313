@@ -1,11 +1,11 @@
 -- create database
-CREATE DATABASE IF NOT EXISTS modul3;
+CREATE DATABASE IF NOT EXISTS modul3TP;
 
 -- select database
 USE modul3;
 
 -- create showroom table
-CREATE TABLE IF NOT EXISTS showroom_ramadhan_table (
+CREATE TABLE IF NOT EXISTS showroom_ramadani_table (
 	id_mobil int(255) NOT NULL PRIMARY KEY,
     nama_mobil varchar(255) NOT NULL,
     pemilik_mobil varchar(255) NOT NULL,

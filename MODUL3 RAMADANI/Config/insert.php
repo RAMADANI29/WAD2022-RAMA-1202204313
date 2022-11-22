@@ -24,6 +24,14 @@
         merk_mobil, tanggal_beli, deskripsi, foto_mobil, status_pembayaran) VALUES('$idmobil', '$mobil', '$nama', '$merk', '$date', '$deskripsi', '$gambar', '$status')";
         $query_value = mysqli_query($connect, $query);
 
+        if($query_value) {
+            echo "<script>alert('Data telah ditambahkan')</script>";
+            echo "<meta http-equiv='refresh' content='1 url=../Pages/ListCar-RAMADANI.php'>";
+        } else {
+            echo "<script>alert('Gagal ditambahkan')</script>";
+            echo "<meta http-equiv='refresh' content='1 url=../Pages/Home-RAMADANI.php'>";
+        }
+
         header("Location:/WAD2022-RAMADANI-1202204096/MODUL3%20RAMADANI/pages/ListCar-RAMADANI.php");
     }
 ?>
