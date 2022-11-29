@@ -1,5 +1,9 @@
 <?php require 'config/connector.php' ?>
 
+if(!isset($_SESSION)) {
+    session_start();
+}
+
 <html>
     <head>
         <meta charset="UTF-8">
@@ -27,9 +31,10 @@
                     </ul>
                     <ul class="navbar-nav ms-auto" style="margin-right: 100px;">
                         <li class="nav-item mx-4">
+
                             
-                            <a href='pages/Login-RAMADANI.php' class="btn btn-light" type="button">Login</a>
-                            <a href='config/logout.php' class="btn btn-light" type="button">Logout</a>
+                        <a href='config/logout.php' class="btn btn-light" type="button">Logout</a> -->
+                            
                             
                         </li>
                     </ul>

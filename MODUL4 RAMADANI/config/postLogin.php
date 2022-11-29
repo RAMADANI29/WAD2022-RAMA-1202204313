@@ -3,6 +3,12 @@
     if(!isset($_SESSION)) {
     session_start();
     }
+    
+    if(isset($_SESSION['email'])) {
+        header("Location: ../index.php");
+        exit;
+    }
+
 
     require 'conn.php' ;
     // require 'connector.php'; 
@@ -20,19 +26,24 @@
         if (mysqli_num_rows($exeQuery) == 1 ) {
             $result = mysqli_fetch_assoc($exeQuery);
 
-            if (password_verify($password, $result['password'])) {
                 $_SESSION['email'] = $result['email'];
-                $_SESSION['message'] = 'Anda berhasil login';
                 header('Location:../index.php');
                 exit();
             } else {
                 $_SESSION['message error'] = 'Password anda salah';
-                header('location:../index.php');
+                header('location:../pages/Login-RAMADANI.php');
                 exit();
             }
         }
         $_SESSION['message error'] = 'Gagal login';
         header('location:../pages/Login-RAMADANI.php');
 
-        }
+        // if($query_value) {
+        //     echo "<script>alert('Data telah ditambahkan')</script>";
+        //     echo "<meta http-equiv='refresh' content='1 url=../Pages/ListCar-RAMADANI.php'>";
+        // } else {
+        //     echo "<script>alert('Gagal ditambahkan')</script>";
+        //     echo "<meta http-equiv='refresh' content='1 url=../Pages/Home-RAMADANI.php'>";
+        // }
+
 ?>
