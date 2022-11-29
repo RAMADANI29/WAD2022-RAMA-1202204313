@@ -28,7 +28,7 @@
                     <ul class="navbar-nav ms-auto" style="margin-right: 100px;">
                         <li class="nav-item mx-4">
                             
-                            <a href='pages/Login-RAMADANI.php' class="btn btn-light" type="button">Login</a>
+                            <!-- <a href='pages/Login-RAMADANI.php' class="btn btn-light" type="button">Login</a> -->
                             <a href='config/logout.php' class="btn btn-light" type="button">Logout</a>
                             
                         </li>

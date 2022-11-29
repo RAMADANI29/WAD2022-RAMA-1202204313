@@ -4,5 +4,5 @@
     // session_unset()
     session_destroy();
 
-    header("Location:../pages/Login-RAMADANI.php")
+    header("Location:../index.php")
 ?>
