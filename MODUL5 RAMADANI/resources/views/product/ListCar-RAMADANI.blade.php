@@ -41,7 +41,7 @@
                 <div class="row">
                     <div class="col-4">
                         <div class="card">
-                        <img class="card-img-top" src="" width="300" title="" alt="Card image cap">
+                        <img class="card-img-top" src="{{asset('img/backgroundMobil.png')}}" width="300" title="" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title"></h5>
                                 <p class="card-text"></p>

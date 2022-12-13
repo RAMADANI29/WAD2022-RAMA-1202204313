@@ -11,7 +11,7 @@ class ProductController extends Controller
     {
         // $products=Product::orderBy('id', 'desc') ->get();
         $products=Product::all();
-        return views('product.ListCar-RAMADANI', compact('products'));
+        return view('product/ListCar-RAMADANI', compact('products'));
         // return 'test';
     }
 
